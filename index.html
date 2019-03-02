@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="./assets/css/theme.css">
     <link rel="stylesheet" href="./assets/css/jake.css">
 
+    <!---Mail Chimp link-->
+
+   <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bf01a62afff4bbc095c3cf0cb/63347c3746073c78afe29db54.js");</script>    
 </head>
 <body>
 
@@ -550,6 +553,20 @@
         </div>
     </footer>
 
+    <!--Database to track payment info-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCJTEj33E5xunnlgknC1dCsT8ECvgCp3Ss",
+        authDomain: "team9-be37f.firebaseapp.com",
+        databaseURL: "https://team9-be37f.firebaseio.com",
+        projectId: "team9-be37f",
+        storageBucket: "team9-be37f.appspot.com",
+        messagingSenderId: "735843198652"
+    };
+    firebase.initializeApp(config);
+    </script>
 
     <!-- Core -->
     <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
@@ -564,6 +581,9 @@
 
     <script src="./assets/js/theme.min.js"></script>
 
+    <!---adding the newsletter pop up-->
+   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+   <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"bf01a62afff4bbc095c3cf0cb","lid":"7fee8c48ee","uniqueMethods":true}) })</script>
 
 
 </body>
