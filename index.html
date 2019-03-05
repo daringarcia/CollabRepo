@@ -76,7 +76,7 @@
                   <a class="nav-link" href="#mission">Our Mission</a>
               </li>
               <li class="nav-item ">
-                  <a class="nav-link" href="#animalfinder">Find An Animal</a>
+                  <a class="nav-link" href="#findAnimal">Find An Animal</a>
               </li>
           </ul>
 
@@ -158,236 +158,216 @@
 
         
         <!--Map Section. Ill be working on this. no one asked you Jake-->
-        <div class="distribution-map">
-            <section class="slice slice-m" id="animalfinder">
-                    <div class="container-fluid">
-                        <div class="row row-grid">
-                            <div class="col-lg-12 text-center">
-                                <h3 class="mb-4" >Find an Endangered Animal in the Map</h3>
-                                <img src="https://i.postimg.cc/qvRytzBp/map2.jpg"class="img-fluid" alt="Responsive image">
+        <div class="distribution-map" id="findAnimal">
+                <!-- This was broken for a while because image hosts are annoying, so now it's a data uri. Sorry :disappointed: -->
+    
+                <section class="slice slice-sm">
+                        <div class="container-fluid">
+                            <div class="row row-grid">
+                                <div class="col-lg-12 text-center">
+                                    <!--<img src="map2.jpg" alt="" />-->
+                                    <h3 class="mb-4">Our mission</h3>
+                                    <img src="https://i.postimg.cc/qvRytzBp/map2.jpg"class="img-fluid" alt="Responsive image">
+                                </div>
                             </div>
                         </div>
+                        </section> 
+    
+                <!--In the original application, these points are injected with Javascript, but ideally, they'd be injected with a haml loop. Because I'm hardcoding content, I'm presenting this as prerendered HTML-->
+    
+                    <!--========================================================================-->
+    
+                <button class="map-point" style="top:72%;left:37%" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_southamerica">
+                    <div class="content">
+                        <div class="centered-y">
+                            
+                        </div>
                     </div>
-                    </section> 
-
-            <!--In the original application, these points are injected with Javascript, but ideally, they'd be injected with a haml loop. Because I'm hardcoding content, I'm presenting this as prerendered HTML-->
-
-                <!--========================================================================-->
-
-            <button class="map-point" id="map-point-SA" style="top:71%;left:32%">
-                <div class="content">
-                    <div class="centered-y">
-                        <h2>South America</h2>
-                        <p>You can put plenty of details in here. In the original, I listed contact information and linked
-                            phone numbers and email addresses.</p>
-                    </div>
-                </div>
-            </button>
-
-            <div class="modal modal-fluid fade" id="modal_southamerica" tabindex="-1" role="dialog" aria-labelledby="modal_southamerica"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 text-center py-4">
-                                <h4 class="heading h3">South America</h4>
-                                <p class="lead text-muted">
-                                    Maybe we can keep the user flow to a single page this way? If too difficult, this
-                                    will lead to a dedicated page '/activation.html'
-                                </p>
-                                <div class="py-md">
-                                    <img src="./assets/img/prv/splash.png" class="img-fluid img-center">
+                </button>
+    
+                <div class="modal modal-fluid fade" id="modal_southamerica" tabindex="-1" role="dialog" aria-labelledby="modal_southamerica"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+    
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center py-4">
+                                    <h4 class="heading h3">South America</h4>
+                                   <div id="southamericabutton">
+                                    <div class="py-md">
+                                    
+                                    </div>
+                                    <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
+                                        & Track!</button>
                                 </div>
-                                <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
-                                    & Track!</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-                     <!--========================================================================-->
-
-            <button class="map-point" style="top:40%;left:46%" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_europe">
-                <div class="content" >
-                    <div class="centered-y">
-                        <h2>Europe</h2>
-                        <p>Lorem egwebgbwejkbjbwejkgbkjwebkgjbwejkbgkwjbekjgbwebgjwejbgjwebng something</p>
+            </div>
+    
+                         <!--========================================================================-->
+    
+                <button class="map-point" style="top:46%;left:60%" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_europe">
+                    <div class="content">
+                        <div class="centered-y">
+                            
+                        </div>
                     </div>
-                </div>
-            </button>
-
-            <div class="modal modal-fluid fade" id="modal_europe" tabindex="-1" role="dialog" aria-labelledby="modal_europe"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 text-center py-4">
-                                <h4 class="heading h3">Europe</h4>
-                                <p class="lead text-muted">
-                                    Maybe we can keep the user flow to a single page this way? If too difficult, this
-                                    will lead to a dedicated page '/activation.html'
-                                </p>
-                                <div class="py-md">
-                                    <img src="./assets/img/prv/splash.png" class="img-fluid img-center">
+                </button>
+    
+                <div class="modal modal-fluid fade" id="modal_europe" tabindex="-1" role="dialog" aria-labelledby="modal_europe"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center py-4">
+                                    <h4 class="heading h3">Europe</h4>
+                                    <div id="europebutton">
+                                    <div class="py-md">
+                                       
+                                    </div>
+                                    <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
+                                        & Track!</button>
                                 </div>
-                                <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
-                                    & Track!</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-                     <!--========================================================================-->
-            <button class="map-point" style="top:77%;left:73.5%" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_australia">
-                <div class="content">
-                    <div class="centered-y">
-                        <h2>Australia</h2>
-                        <p>I solemnly swear that I am up to no good</p>
+            </div>
+                         <!--========================================================================-->
+                <button class="map-point" style="top:77%;left:72.5%" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_australia">
+                    <div class="content">
+                        <div class="centered-y">
+                            
+                        </div>
                     </div>
-                </div>
-            </button>
-
-            <div class="modal modal-fluid fade" id="modal_australia" tabindex="-1" role="dialog" aria-labelledby="modal_australia"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 text-center py-4">
-                                <h4 class="heading h3">Australia</h4>
-                                <p class="lead text-muted">
-                                    Maybe we can keep the user flow to a single page this way? If too difficult, this
-                                    will lead to a dedicated page '/activation.html'
-                                </p>
-                                <div class="py-md">
-                                    <img src="./assets/img/prv/splash.png" class="img-fluid img-center">
+                </button>
+    
+                <div class="modal modal-fluid fade" id="modal_australia" tabindex="-1" role="dialog" aria-labelledby="modal_australia"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center py-4">
+                                    <h4 class="heading h3">Australia</h4>
+                                    <div id="australiabutton">
+                                    <div class="py-md">
+                                       
+                                    </div>
+                                    <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
+                                        & Track!</button>
                                 </div>
-                                <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
-                                    & Track!</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-                     <!--========================================================================-->
-            <button class="map-point" id="map-point-NA" style="top:43%;left:23%" class="btn btn-primary" data-toggle="modal" data-target="#modal_northamerica">
-                <div class="content">
-                    <div class="centered-y">
-                        <h2>North America</h2>
-                        <p>I&rsquo;m a marshmallow</p>
+            </div>
+    
+                         <!--========================================================================-->
+                <button class="map-point" id="map-point-NA" style="top:50%;left:30%" class="btn btn-primary" data-toggle="modal" data-target="#modal_northamerica">
+                    <div class="content">
+                        <div class="centered-y">
+                            
+                        </div>
                     </div>
-                </div>
-            </button>
-
-            <div class="modal modal-fluid fade" id="modal_northamerica" tabindex="-1" role="dialog" aria-labelledby="modal_northamerica"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 text-center py-4">
-                                <h4 class="heading h3">North America</h4>
-                                <p class="lead text-muted">
-                                    Maybe we can keep the user flow to a single page this way? If too difficult, this
-                                    will lead to a dedicated page '/activation.html'
-                                </p>
-                                <div class="py-md">
-                                    <img src="./assets/img/prv/splash.png" class="img-fluid img-center">
+                </button>
+    
+                <div class="modal modal-fluid fade" id="modal_northamerica" tabindex="-1" role="dialog" aria-labelledby="modal_northamerica"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center py-4">
+                                    <h4 class="heading h3">North America</h4>
+                                    <div id="northAmericabutton">
+                                    <div class="py-md">
+                                        
+                                    </div>
+                                    <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
+                                        & Track!</button>
                                 </div>
-                                <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
-                                    & Track!</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-                     <!--========================================================================-->
-
-            <button class="map-point" id="map-point-AFR" style="top:55%;left:46%" class="btn btn-primary" data-toggle="modal" data-target="#modal_africa">
-                <div class="content">
-                    <div class="centered-y">
-                        <h2>Africa</h2>
-                        <p>I bless the rains</p>
+            </div>
+    
+                         <!--========================================================================-->
+    
+                <button class="map-point" id="map-point-AFR" style="top:62%;left:50%" class="btn btn-primary" data-toggle="modal" data-target="#modal_africa">
+                    <div class="content">
+                        <div class="centered-y">
+                            
+                        </div>
                     </div>
-                </div>
-            </button>
-
-            <div class="modal modal-fluid fade" id="modal_africa" tabindex="-1" role="dialog" aria-labelledby="modal_africa"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 text-center py-4">
-                                <h4 class="heading h3">Africa</h4>
-                                <p class="lead text-muted">
-                                    Maybe we can keep the user flow to a single page this way? If too difficult, this
-                                    will lead to a dedicated page '/activation.html'
-                                </p>
-                                <div class="py-md">
-                                    <img src="./assets/img/prv/splash.png" class="img-fluid img-center">
+                </button>
+    
+                <div class="modal modal-fluid fade" id="modal_africa" tabindex="-1" role="dialog" aria-labelledby="modal_africa"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center py-4">
+                                    <h4 class="heading h3">Africa</h4>
+                                    <div id="africabutton">
+                                    <div class="py-md">
+                                    
+                                    </div>
+                                    <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
+                                        & Track!</button>
                                 </div>
-                                <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
-                                    & Track!</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-            
-                     <!--========================================================================-->
-
-            <button class="map-point" style="top:44%;left:66%" class="btn btn-primary" data-toggle="modal" data-target="#modal_asia">
-                <div class="content">
-                    <div class="centered-y">
-                        <h2>With Love</h2>
-                        <p>&mdash; 007</p>
+            </div>
+                
+                         <!--========================================================================-->
+    
+                <button class="map-point" style="top:36%;left:68%" class="btn btn-primary" data-toggle="modal" data-target="#modal_asia">
+                    <div class="content">
+                        <div class="centered-y">
+                            
+                        </div>
                     </div>
-                </div>
-            </button>
-        </div>
-
-
-        <div class="modal modal-fluid fade" id="modal_asia" tabindex="-1" role="dialog" aria-labelledby="modal_asia"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 text-center py-4">
-                                <h4 class="heading h3">Asia</h4>
-                                <p class="lead text-muted">
-                                    Maybe we can keep the user flow to a single page this way? If too difficult, this
-                                    will lead to a dedicated page '/activation.html'
-                                </p>
-                                <div class="py-md">
-                                    <img src="./assets/img/prv/splash.png" class="img-fluid img-center">
+                </button>
+            </div>
+    
+    
+            <div class="modal modal-fluid fade" id="modal_asia" tabindex="-1" role="dialog" aria-labelledby="modal_asia"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center py-4">
+                                    <h4 class="heading h3">Asia</h4>
+                                    <div id="asiabutton">
+                                    <div class="py-md">
+                                        
+                                    </div>
+                                    <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
+                                        & Track!</button>
                                 </div>
-                                <button type="button" class="btn btn-lg btn-primary px-5" data-dismiss="modal">Activate
-                                    & Track!</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
                      <!--========================================================================-->
 
-
-        <p class="description">It&rsquo;s been brought to my attention that OSX/Safari doesn&rsquo;t support :active for
-            buttons with default settings, so you guys will have to resort to JS or hold down your mouse button to keep
-            :focus triggered.</p>
 
         <!-- Donate Area. Darin this is all you. Style this section however you'd like. -->
 
