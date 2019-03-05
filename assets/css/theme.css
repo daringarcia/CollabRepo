@@ -5086,7 +5086,7 @@ input[type='button'].btn-block
 
     display: flex;
 
-    padding: .75rem 1rem; 
+    padding: .5rem 1rem; 
 
     flex-wrap: wrap;
     align-items: center;
@@ -5128,6 +5128,7 @@ input[type='button'].btn-block
     font-size: 22;
     margin-bottom: 0;
     padding-left: 0;
+    margin-top:-30px;
 
     list-style: none;
 }
@@ -5147,9 +5148,8 @@ input[type='button'].btn-block
 {
     display: inline-block;
     font-family: 'Dancing Script', cursive;
-    padding-top: .25rem;
+    padding-top: .8rem;
     padding-bottom: .25rem;
-    font-size: 100px;
    
 }
 
@@ -9352,6 +9352,7 @@ button.bg-darker:focus
 .mx-3
 {
     margin-right: 1rem !important;
+    font-size: 40px;
 }
 
 .mb-3,
@@ -18115,7 +18116,7 @@ Styled shaped wrappers for displaying code and images in a more stylish manner
 
 .navbar-text
 {
-    font-size: .875rem;
+    font-size: 1.1rem;
 }
 
 @media (min-width: 992px)
@@ -18245,7 +18246,7 @@ Styled shaped wrappers for displaying code and images in a more stylish manner
 
     display: flex;
 
-    padding-top: .75rem;
+    padding-top: 2rem;
     padding-bottom: .75rem; 
 
     align-items: center;
