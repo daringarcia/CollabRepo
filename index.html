@@ -82,12 +82,12 @@
 
           <ul class="navbar-nav align-items-lg-center ml-lg-auto">
               <li class="nav-item mr-0">
-                  <a href="#" target="_blank" class="nav-link d-lg-none">Donate Here</a>
-                  <a href="#" target="_blank"
-                      class="btn btn-sm btn-white btn-circle btn-icon d-none d-lg-inline-flex">
-                      <span class="btn-inner--icon"><i class="fas fa-shopping-cart"></i></span>
-                      <span class="btn-inner--text">Donate Here</span>
-                  </a>
+                    <a class="nav-link" href="#donateHere">
+                            <span class="btn-inner--icon"><i class="fas fa-shopping-cart"></i></span>
+                            <span class="btn-inner--text">Donate Here</span>
+
+                    </a>
+                  
               </li>
           </ul>
       </div>
@@ -99,7 +99,7 @@
         <!-- Hero Section. Judanator this is all you. -->  
         <section class="bg-darker">
                 <div class="spotlight overflow-hidden bg-cover bg-size--cover" data-spotlight="fullscreen">
-                        <div class="video-responsive">
+                        <div class="video-responsive" id="home">
                                 <iframe class="videoContainer__video"width="1920" height="1080" src="https://www.youtube.com/embed/-JP-zoBLyWE?start=05&end200controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=-JP-zoBLyWE" frameborder="0"></iframe>
                                  
                 <span class="mask bg-gradient-dark opacity-6"></span>
@@ -125,16 +125,16 @@
                 </div>
             </section>    
 
-        <section class="slice slice-xl bg-darker">
+        <section class="slice slice-xl bg-darker" id="mission">
             <div class="container">
                 <div class="row row-grid justify-content-center">
-                    <div class="col-lg-4 col-md-3 col-sm-2">
+                    <div class="col-lg-4 col-md-8 col-sm-12">
                         <img class="animal-img" src="assets/img/amur-leopard.jpg">
                     </div>
 
-                    <div class="col-lg-6 col-md-3 col-sm-2">
+                    <div class="col-lg-6 col-md-8 col-sm-12">
 
-                        <h3 class="lead mb-4">Our Mission</h3>
+                        <h3 class="lead mb-4" >Our Mission</h3>
                         <p class="lead lh-150 mb-0">
                                 The rate at which animals are becoming endangered is increasing at a concerning pace.
                                 Our Goal is to raise awareness about endangered species all over the world. We also want to create a platform where everyone can easily help save those animals though donations and volunteering programs.
@@ -143,13 +143,13 @@
                  <div class="row row-grid justify-content-center">
                         
     
-                        <div class="col-lg-6 col-md-3 col-sm-2">
+                        <div class="col-lg-6 col-md-8 col-sm-12">
 
                         <h3 class="lead mb-4">What does this mean to you?</h3>
                             <p class="lead lh-150 mb-0"> Humanity has wiped out 60% of mammals, birds, fish, and reptiles since 1970, according to a WWF report. If there was a 60% decline in the human population, that would be equvalent to emptying North America, South America, Europe, China and Oceania... THIS IS THE SCALE OF WHAT WE HAVE DONE!
                             </div>
 
-                            <div class="col-lg-4 col-md-3 col-sm-2">
+                            <div class="col-lg-4 col-md-8 col-sm-12">
                                     <img class="animal-img" src="assets/img/Rhino.JPG">
                                 </div>
                 </div>
@@ -159,11 +159,11 @@
         
         <!--Map Section. Ill be working on this. no one asked you Jake-->
         <div class="distribution-map">
-            <section class="slice slice-sm">
+            <section class="slice slice-m" id="animalfinder">
                     <div class="container-fluid">
                         <div class="row row-grid">
                             <div class="col-lg-12 text-center">
-                                <h3 class="mb-4">Our mission</h3>
+                                <h3 class="mb-4" >Find an Endangered Animal in the Map</h3>
                                 <img src="https://i.postimg.cc/qvRytzBp/map2.jpg"class="img-fluid" alt="Responsive image">
                             </div>
                         </div>
@@ -212,7 +212,7 @@
                      <!--========================================================================-->
 
             <button class="map-point" style="top:40%;left:46%" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_europe">
-                <div class="content">
+                <div class="content" >
                     <div class="centered-y">
                         <h2>Europe</h2>
                         <p>Lorem egwebgbwejkbjbwejkgbkjwebkgjbwejkbgkwjbekjgbwebgjwejbgjwebng something</p>
@@ -393,7 +393,7 @@
 
                 <!-- Donate Area. Darin this is all you. Style this section however you'd like. -->
 
-                <section class="slice slice-lg bg-dark">
+                <section class="slice slice-lg bg-dark" id="donateHere">
 
                     <span class="tongue tongue-top"><i class="fas fa-angle-up"></i></span>
         
@@ -435,9 +435,12 @@
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-md-12">
-                                        <div class="form-group">
+                             <!---adding id="card-number-field" -->
+
+                                        <div class="form-group" id="card-number-field">
                                             <div class="input-group input-group-transparent">
-                                                <input type="text" class="form-control" data-mask="0000 0000 0000 0000" placeholder="4789 5697 0541 7546">
+                        <!---adding id="cardNumber" -->
+                                                <input type="tel" min="0" class="form-control" id="cardNumber" data-mask="0000 0000 0000 0000" placeholder="4789 5697 0541 7546">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text"><i class="fas fa-credit-card"></i></span>
                                                 </div>
@@ -447,7 +450,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="form-group">
+
+                                        <div class="form-group" >
                                             <label class="control-label">Name on card</label>
                                             <input type="text" class="form-control" placeholder="John Doe">
                                         </div>
@@ -455,14 +459,14 @@
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label class="control-label">Expiry date</label>
-                                            <input type="text" class="form-control" data-mask="00/00" placeholder="MM/YY">
+                                            <input type="number" min="0" class="form-control" data-mask="00/00" placeholder="MM/YY">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label class="control-label">CVV code</label>
                                             <div class="input-group input-group-transparent">
-                                                <input type="text" class="form-control" data-mask="000" placeholder="746">
+                                                <input type="number" min="0" class="form-control" data-mask="000" placeholder="746">
                                                 <div class="input-group-append" data-toggle="popover" data-container="body" data-placement="top" data-content="It is a three digit code that can be found only on the back of your card. Be carefull so no one sees it." data-title="What is a CVV code?">
                                                     <span class="input-group-text"><i class="fas fa-question-circle"></i></span>
                                                 </div>
