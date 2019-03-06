@@ -19584,6 +19584,14 @@ section
     border-bottom: 0;
 }
 
+.transparent {
+    opacity: 0.2;
+}
+
+#error-message{
+    color: red;
+font-size: 20px;
+}
 .card .table
 {
     margin-bottom: 0;
