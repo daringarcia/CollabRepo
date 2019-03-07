@@ -10,6 +10,58 @@ Author URI: https://www.webpixels.io
 Copyright 2018 Webpixels
 
 */
+
+/* Mailchimp CSS*/
+.clear{
+    width: 600px;
+    background-color: black;
+    color: white;
+}
+
+#mc_embed_signup_scroll{
+    width: 600px;
+    background-color: black;
+    color: white;
+    padding-top: 70px;
+}
+
+#mce-EMAIL{
+
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    width: 350px;
+}
+
+#mc-embedded-subscribe.button{
+
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    font: bold 12px/25px Arial, sans-serif;
+ 
+    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+ 
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+ 
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+ 
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+
+/* End Mailchimp CSS */
+
 :root
 {
     --blue: #007aff;
@@ -4976,7 +5028,7 @@ input[type='button'].btn-block
 .nav-link:before,.nav-link:after{
     content:'';
     position:absolute;
-    top:0;
+    top:-30px;
     right:0;
     height:2px;
     width:0;
