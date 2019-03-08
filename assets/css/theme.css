@@ -13,13 +13,13 @@ Copyright 2018 Webpixels
 
 /* Mailchimp CSS*/
 .clear{
-    width: 800px;
+    width: 400px;
     color: white;
     text-align: right;
 }
 
 #mc_embed_signup_scroll{
-    width: 800px;
+    width: 400px;
     color: white;
     padding-top: 70px;
     float: right;
