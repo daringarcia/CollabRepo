@@ -24,12 +24,11 @@
     <link rel="stylesheet" href="./assets/css/jake.css">
 
     <!---Mail Chimp link-->
-
-    <!-- <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bf01a62afff4bbc095c3cf0cb/63347c3746073c78afe29db54.js");</script>   
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bf01a62afff4bbc095c3cf0cb/63347c3746073c78afe29db54.js");</script>   
    
    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
    <style type="text/css">
-       #mc_embed_signup{background: #020b13; clear:left; font:14px Helvetica,Arial,sans-serif; } -->
+       #mc_embed_signup{background: #020b13; clear:left; font:14px Helvetica,Arial,sans-serif; }
 
     </style>
 </head>
@@ -1026,197 +1025,79 @@
                         Donate Today!</h2>
 
                     <!-- Attach a new card -->
-                    <div class="mt-5 pt-5 delimiter-top" id="donateToday">
+            <div class="mt-5 pt-5 delimiter-top" id="donateToday">
                         <!-- <div class="col-lg-8">
-                                            <h5 id="donateToday">Donate Today</h5> -->
-                        <p class="text-muted mt-2">We support Mastercard, Visa and American Express.
-                            <img alt="Image placeholder" src="assets/img/icons/cards/mastercard.png" width="40"
-                                class="mr-2" id="mastercard">
-                            <img alt="Image placeholder" src="assets/img/icons/cards/visa.png" width="40" class="mr-2"
-                                id="visa">
-                            <img alt="Image placeholder" src="assets/img/icons/cards/american-express.png" width="40"
-                                id="amex"></p>
-                    </div>
-
-                    <form class="form-default mt-4" style="padding-bottom:30px;">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row mt-3">
-                                    <div class="col-md-6">
-                                        <div class="form-group" id="card-number-field">
-                                            <!--for firebase var use id="cardNumber" changed from card-number-->
-                                            <label class="control-label">Card Number</label>
-                                            <div class="input-group input-group-transparent">
-                                                <input type="text" class="form-control" id="cardNumber"
-                                                    data-mask="0000 0000 0000 0000" placeholder="4789 5697 0541 7546">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text"><i
-                                                            class="fas fa-credit-card"></i></span>
+                            <h5 id="donateToday">Donate Today</h5> -->
+                            <p class="text-muted mt-2">We support Mastercard, Visa and American Express.             
+                                <img alt="Image placeholder" src="assets/img/icons/cards/mastercard.png" width="40" class="mr-2" id="mastercard">
+                                <img alt="Image placeholder" src="assets/img/icons/cards/visa.png" width="40" class="mr-2" id="visa">
+                                <img alt="Image placeholder" src="assets/img/icons/cards/american-express.png" width="40"id="amex"></p>
+                        </div>
+            
+                        <form class="form-default mt-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group" id="card-number-field"> 
+                                                <!--for firebase var use id="cardNumber" changed from card-number-->
+                                                <label class="control-label">Card Number</label>
+                                                <div class="input-group input-group-transparent">
+                                                    <input type="text" class="form-control" id="cardNumber" data-mask="0000 0000 0000 0000" placeholder="4789 5697 0541 7546">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text"><i class="fas fa-credit-card"></i></span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group owner">
-                                            <!--for firebase var use id="name"-->
-                                            <label for="owner" class="control-label">Name on card</label>
-                                            <input type="text" class="form-control" id="owner" placeholder="John Doe">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="form-group" id="expiration-date">
-                                            <!--for firebase var use id="expiry-date"-->
-                                            <label class="control-label">Expiry date</label>
-                                            <input type="text" class="form-control" id="expiry-date" placeholder="MM/YY" maxlength="5"> 
-                                            <!-- <select id="expiry-month">
-                                                <option value="Januray">January</option>
-                                                <option value="February">February </option>
-                                                <option value="March">March</option>
-                                                <option value="April">April</option>
-                                                <option value="May">May</option>
-                                                <option value="June">June</option>
-                                                <option value="July">July</option>
-                                                <option value="August">August</option>
-                                                <option value="September">September</option>
-                                                <option value="October">October</option>
-                                                <option value="November">November</option>
-                                                <option value="December">December</option>
-                                            </select>
-                                            <select id="expiry-year">
-                                                <option value="19"> 2019</option>
-                                                <option value="20"> 2020</option>
-                                                <option value="21"> 2021</option>
-                                                <option value="22"> 2022</option>
-                                                <option value="23"> 2023</option>
-                                                <option value="24"> 2024</option>
-
-                                            </select> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group CVV">
-                                            <label for="cvv" class="control-label">CVV code</label>
-                                            <div class="input-group input-group-transparent">
-                                                <!--for firebase var use id="cvv"-->
-                                                <input type="text" class="form-control" data-mask="000" id="cvv"
-                                                    placeholder="746">
-                                                <div class="input-group-append" data-toggle="popover"
-                                                    data-container="body" data-placement="top"
-                                                    data-content="It is a three digit code that can be found only on the back of your card. Be carefull so no one sees it."
-                                                    data-title="What is a CVV code?">
-                                                    <span class="input-group-text"><i
-                                                            class="fas fa-question-circle"></i></span>
-                                                </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group owner">
+                                                <!--for firebase var use id="name"-->
+                                                <label for="owner" class="control-label">Name on card</label>
+                                                <input type="text" class="form-control" id="owner" placeholder="John Doe">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <!--for firebase var use id="donation"-->
-                                            <label class="control-label">Donation Amount</label>
-                                            <input type="number" min="1.00" step="1.00" class="form-control"
-                                                data-mask="$1.00" id="donation" placeholder="$10.00">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group" id="expiration-date">
+                                                <!--for firebase var use id="expiry-date"-->
+                                                <label class="control-label">Expiry date</label>
+                                                <input type="text" class="form-control" id="expiry-date" placeholder="MM/YY" maxlength="5">
+                                            </div>
                                         </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group CVV">
+                                                <label for="cvv" class="control-label">CVV code</label>
+                                                <div class="input-group input-group-transparent">
+                                                    <!--for firebase var use id="cvv"-->
+                                                    <input type="text" class="form-control" data-mask="000" id="cvv" placeholder="746">
+                                                    <div class="input-group-append" data-toggle="popover" data-container="body" data-placement="top" data-content="It is a three digit code that can be found only on the back of your card. Be carefull so no one sees it." data-title="What is a CVV code?">
+                                                        <span class="input-group-text"><i class="fas fa-question-circle"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <!--for firebase var use id="donation"-->
+                                                <label class="control-label">Donation Amount</label>
+                                                <input type="number" min="1.00" step="1.00" class="form-control" data-mask="$1.00" id="donation" placeholder="$10.00">
+                                            </div>
                                         <!-- <div class="col-md-3"> -->
-                                        <div class="text-right" id="pay-now">
-                                            <button class="btn btn-sm btn-primary" type="submit"
-                                                id="confirm-purchase">Donate</button>
+                                            <div class="text-right" id="pay-now">
+                                            <button class="btn btn-sm btn-primary" type="submit" id="confirm-purchase">Donate</button>
                                             <br>
                                             <br>
                                             <div id="error-message"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-10 col-md-6 col-sm-10" style="max-width:68.33333%;">
-
-                                <div id="mc_embed_signup">
-                                    <form
-                                        action="https://github.us20.list-manage.com/subscribe/post?u=bf01a62afff4bbc095c3cf0cb&amp;id=7fee8c48ee"
-                                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                                        class="validate" target="_blank" novalidate>
-                                        <div id="mc_embed_signup_scroll">
-                                            <p class="lead" style="color: black;">Subscribe to our mailing list</p>
-                                            <div class="mc-field-group">
-                                                <!-- </label>  -->
-                                                <input type="email" value="" name="EMAIL" class="required email"
-                                                    id="mce-EMAIL" placeholder=" Enter your email here!">
-                                            </div>
-                                            <div id="mce-responses" class="clear">
-                                                <div class="response" id="mce-error-response" style="display:none">
-                                                </div>
-                                                <div class="response" id="mce-success-response" style="display:none">
-                                                </div>
-                                            </div>
-                                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-
-                                                <input type="text" name="b_bf01a62afff4bbc095c3cf0cb_7fee8c48ee"
-                                                    tabindex="-1" value="">
-                                            </div>
-                                            <div class="clear">
-                                                <input type="submit" name="subscribe" id="mc-embedded-subscribe"
-                                                    class="button nav-link">
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <section class="slice slice" id="mission">
-                                        <div class="container">
-
-                                            <div class="row row-grid justify-content-center">
-
-                                                <!-- Begin Mailchimp Signup Form -->
-                                                <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-                                                                            <style type="text/css">
-                                                                                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-                                                                                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                                                                                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                                                                            </style> -->
-
-
-                                            </div>
-
-                                        </div>
-
+                                    
                                 </div>
-
-
-                                <!--End mc_embed_signup-->
-
                             </div>
-                        </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-                <!-- Add money using PayPal -->
-                <!-- <div class="card mt-4">
-                        <div class="card-body">
-                        <div class="row">
-                            <div class="col-8">
-                                <h5>PayPal</h5>
-                                <p class="text-muted mt-2">Donate using the most known and secure platform for online money transfers. You will be redirected to PayPal to finish complete your purchase.</p>
-                            </div>
-                            <div class="col-4 text-right">
-                                <img alt="Image placeholder" src="assets/img/icons/cards/paypal-256x160.png" width="100">
-                            </div>
-                        </div>
-
-
-                        <div class="text-right mt-3">
-                            <a href="#" class="btn btn-sm btn-primary">Donate with PayPal</a>
-                        </div> -->
-            </div>
-        </div>
-        </form>
+                        </form>
         </div>
 
 
@@ -1273,15 +1154,15 @@
     <script src="./assets/js/Modal.js"></script>
 
     <!---adding the newsletter pop up-->
-    <!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-   <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"bf01a62afff4bbc095c3cf0cb","lid":"7fee8c48ee","uniqueMethods":true}) })</script> -->
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+   <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"bf01a62afff4bbc095c3cf0cb","lid":"7fee8c48ee","uniqueMethods":true}) })</script>
 
 
     <!---adding jquery - payfrom library -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script src="./assets/js/jquery.payform.min.js" charset="utf-8"></script>
-   <script src="./assets/js/script.js"></script> -->
+   <script src="./assets/js/script.js"></script> 
 
     <!----Adding mailchimp JS-->
     <!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
