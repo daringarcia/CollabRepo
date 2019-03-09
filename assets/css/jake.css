@@ -1,8 +1,28 @@
+#news-here img{
+    height: auto;
+    width: 300px;
+}
+
 a:visited {
     color: #dff3fd;
    }
    li.active a, a:hover, a:active {
     color: #e5e5e5;
+   }
+
+   .video-responsive{
+       overflow: hidden;
+       padding-bottom:56.25;
+       position:relative;
+       height:0;
+   }
+
+   .video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
    }
    /*
    .centered {
@@ -22,6 +42,142 @@ a:visited {
    }
    */
    
+  
+   #mpnorthamerica{
+    top:50%;
+    left:34%;
+}
+
+#mpsouthamerica{
+    top:75%;
+    left:40%;
+}
+
+#mpasia{
+    top:39%;
+    left:65%;
+}
+
+#mpeurope{
+    top:49%;
+    left:60%;
+}
+
+#mpafrica{
+    top:65%;
+    left:51%;
+}
+
+#mpaustralia{
+    top:79%;
+    left:68.5%;
+}
+
+  
+@media only screen and (max-width: 1600px) {
+    #mpnorthamerica {top: 51%; left: 31%;}
+    #mpsouthamerica {top: 74%; left: 38%;}
+    #mpasia {top: 40%; left: 68% ;}
+    #mpeurope {}
+    #mpafrica {}
+    #mpaustralia {top: 79%; left: 71.5%;} 
+  }
+
+  @media only screen and (max-width: 1440px) {
+    #mpnorthamerica {top: 51%; left: 29%;}
+    #mpsouthamerica {top: 74%; left: 37%;}
+    #mpasia {top: 40%; left: 70%;}
+    #mpeurope {top: 45%; left: 63%;}
+    #mpafrica {}
+    #mpaustralia {top: 79%; left: 74.5%;}    
+  }
+
+  @media only screen and (max-width: 1366px) {
+    #mpnorthamerica {top: 48%; left: 28%;}
+    #mpsouthamerica {top: 72%; left: 36%;}
+    #mpasia {top: 39%; left: 70%;}
+    #mpeurope {top: 49%; left: 63%;}
+    #mpafrica {}
+    #mpaustralia {top: 79%; left: 74.5%;}  
+}
+
+@media only screen and (max-width: 1280px) {
+    #mpnorthamerica {top: 50%; left: 26%;}
+    #mpsouthamerica {top: 72%; left: 35%;}
+    #mpasia {top: 39%; left: 73%;}
+    #mpeurope {top: 49%; left: 63%;}
+    #mpafrica {}
+    #mpaustralia {top: 79%; left: 77.5%;} 
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    #mpnorthamerica {}
+    #mpsouthamerica {}
+    #mpasia {}
+    #mpeurope {}
+    #mpafrica {}
+    #australia {}   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    #mpnorthamerica {}
+    #mpsouthamerica {}
+    #mpasia {top:39%;}
+    #mpeurope {top:49%;}
+    #mpafrica {}
+    #australia {}  
+}    
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    #mpnorthamerica {top:55%;}
+    #mpsouthamerica {top:75%;}
+    #mpasia {top:48%;}
+    #mpeurope {top:57%;}
+    #mpafrica {top:67%;}
+    #australia {top:80%;} 
+  } 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    #mpnorthamerica {top: 59%; left: 28%;}
+    #mpsouthamerica {}
+    #mpasia {top:49%;}
+    #mpeurope {top:59%;}
+    #mpafrica {}
+    #australia {top: 76%; left: 75.5%;} 
+    .distribution-map .map-point {
+        width: 30px !important;
+        height: 30px !important;
+    }
+  } 
+
+  @media only screen and (max-width: 400px) {
+    #mpnorthamerica {top: 71%; left: 28%;}
+    #mpsouthamerica {top:82%}
+    #mpasia {top:67%; left:72;}
+    #mpeurope {top:72%;}
+    #mpafrica {top:78%;}
+    #australia {top: 84%; left: 73.5%;} 
+    .distribution-map .map-point {
+        width: 30px !important;
+        height: 30px !important;
+    }
+  } 
+
+  
+
+ 
+
+  .video-fluid {
+    width: 100%;
+    height: auto;
+  }
+
+
+
    .distribution-map {
     position: relative;
     width: 100%;

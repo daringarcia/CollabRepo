@@ -1,23 +1,25 @@
-// this was put at the bottom of the index.html vvvv
 
-// var config = {
-//     apiKey: "AIzaSyCE4bIUeNfQ7Z2FsMO5iuP7szvZt1GxeYI",
-//     authDomain: "team9-266a8.firebaseapp.com",
-//     databaseURL: "https://team9-266a8.firebaseio.com",
-//     projectId: "team9-266a8",
-//     storageBucket: "team9-266a8.appspot.com",
-//     messagingSenderId: "340573874282"
-// };
-// firebase.initializeApp(config);
 
-var dataRef = firebase.database();
+// Initialize Firebase
+var otherAppConfig = {
+    apiKey: "AIzaSyCE4bIUeNfQ7Z2FsMO5iuP7szvZt1GxeYI",
+    authDomain: "team9-266a8.firebaseapp.com",
+    databaseURL: "https://team9-266a8.firebaseio.com",
+    projectId: "team9-266a8",
+    storageBucket: "team9-266a8.appspot.com",
+    messagingSenderId: "340573874282"
+};
+var otherApp = firebase.initializeApp(otherAppConfig, "other");
+
+var dataRef = otherApp.database();
+console.log(dataRef)
 
 dataRef.ref().on("value", function (snapshot) {
 
     // <img src="https://www.worldatlas.com/r/w728-h425-c728x425/upload/e7/b9/13/condor.jpg">
 
-    
-    
+
+
     //setting each snapshot value as a variable. These values have the image, name and description in firebase.
     var rabbitPic = snapshot.val().Africa.RiverineRabbit.image
     var rabbitName = snapshot.val().Africa.RiverineRabbit.species_name
@@ -50,9 +52,9 @@ dataRef.ref().on("value", function (snapshot) {
 
     console.log(zebraName)
 
-   
+
     // north america code
-    
+
 
     var raccoonPic = snapshot.val().NorthAmerica.PygmyRaccoon.image
     var raccoonName = snapshot.val().NorthAmerica.PygmyRaccoon.species_name
@@ -196,3 +198,39 @@ dataRef.ref().on("value", function (snapshot) {
     console.log("The read failed: " + errorObject.code);
 
 });
+
+var apiKey = "db3ac0b89f504302b518361b6d27fc68"
+var queryURL = "https://newsapi.org/v2/top-headlines?sources=national-geographic&apiKey=" + apiKey;
+
+$.ajax({
+    url: queryURL,
+    method: "GET"
+}).then(function (response) {
+
+    console.log(response)
+    
+
+        
+        $('#1stpicture').attr('src', response.articles[0].urlToImage);
+        // $("#news-here").append('<img src="' + response.articles[0].urlToImage + '" />');
+        $("#article1title").append(response.articles[0].title, "<br>");
+        $("#article1desc").append(response.articles[0].description);
+        $("#article1link").append(response.articles[0].url, "<br>");
+
+        $('#2ndpicture').attr('src', response.articles[1].urlToImage);
+        $("#article2title").append(response.articles[1].title, "<br>");
+        $("#article2desc").append(response.articles[1].description);
+        $("#article2link").append(response.articles[1].url, "<br>");
+        
+        $('#3rdpicture').attr('src', response.articles[2].urlToImage);
+        $("#article3title").append(response.articles[2].title, "<br>");
+        $("#article3desc").append(response.articles[2].description);
+        $("#article3link").append(response.articles[2].url, "<br>");
+        
+        
+
+        console.log(response.articles[i].urlToImage)
+    
+});
+
+
